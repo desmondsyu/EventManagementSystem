@@ -90,7 +90,10 @@ namespace EventManagementSystem
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(" Error in Database Operation", "Error", MessageBoxButtons.OK);
+
+                        //MessageBox.Show(" Error in Database Operation", "Error", MessageBoxButtons.OK);
+                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+
                     }
 
                 }
